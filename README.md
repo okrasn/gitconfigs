@@ -13,3 +13,11 @@ Pre condition: Setup Git
 
     - When you're prompted to `Enter a file in which to save the key,` press `Enter`. This accepts the default file location.
     - At the prompt, type a secure passphrase
+2.  Add SSH key to the ssh-agent
+    - Put in the termial
+
+      `eval \$(ssh-agent -s)`
+
+    - Add your SSH private key to the ssh-agent
+
+      `ssh-add ~/.ssh/id_rsa`
